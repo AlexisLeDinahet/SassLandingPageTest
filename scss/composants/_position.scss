@@ -1,0 +1,12 @@
+// POSITION
+
+@mixin positionCenter {
+    display: flex;
+    align-items: center;
+  }
+  
+  @mixin positionAllCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

@@ -1,0 +1,93 @@
+// COMPOSANTS
+@use "../composants/colors" as *;
+@use "../composants/text" as *;
+@use "../composants/position" as *;
+
+/* NEWSLETTER */
+
+.newsletter {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 400px;
+  padding: 60px;
+  background: $couleur-texte;
+  z-index: 10000;
+  box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  visibility: visible;
+  opacity: 0;
+  transition: 0.5s;
+  border: solid 5px $couleur-orange;
+
+  .active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .close {
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .newsletter__title {
+    h2 {
+      color: $couleur-orange;
+      font-weight: 800;
+      font-family: "Orbitron", sans-serif;
+      text-transform: uppercase;
+      font-size: $h2;
+    }
+    p {
+      padding-top: px;
+      font-weight: 600;
+      font-size: $p;
+    }
+  }
+  .newsletter__form {
+    padding-top: 15px;
+
+    input {
+      width: 250px;
+      padding: 10px;
+      font-size: 1.125rem;
+      border: 1px solid $couleur-orange;
+    }
+    input[type="submit"] {
+      background: $couleur-orange;
+      width: 120px;
+      font-weight: 500;
+      color: $couleur-texte;
+      cursor: pointer;
+      box-sizing: border-box;
+      letter-spacing: 1px;
+    }
+  }
+  .newsletter__policy {
+    padding-top: 20px;
+    font-size: 0.8rem;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 10px;
+
+  .droits {
+    position: relative;
+    @include positionAllCenter;
+    color: $couleur-texte;
+
+    .mail {
+      text-decoration: none;
+      color: $couleur-orange;
+    }
+  }
+}

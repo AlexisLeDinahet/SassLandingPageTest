@@ -1,0 +1,17 @@
+// COMPOSANTS
+@use "../composants/colors" as *;
+@use "../composants/text" as *;
+@use "../composants/position" as *;
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-image: url(../img/fond.png);
+  }

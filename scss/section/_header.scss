@@ -1,0 +1,84 @@
+// COMPOSANTS
+@use "../composants/colors" as *;
+@use "../composants/text" as *;
+@use "../composants/position" as *;
+
+/* HEADER */
+
+header {
+  position: absolute;
+  @include positionCenter;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 50px 100px;
+  justify-content: space-between;
+
+  .logo {
+    position: relative;
+    @include positionCenter;
+    color: $couleur-texte;
+    font-size: p;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+
+    .logo__img {
+      width: 75px;
+    }
+
+    .logo__text {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .logo__title {
+      width: 10%;
+      margin-bottom: 2px;
+    }
+  }
+}/* HEADER */
+
+header {
+  position: absolute;
+  @include positionCenter;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 50px 100px;
+  justify-content: space-between;
+
+  .logo {
+    position: relative;
+    @include positionCenter;
+    color: $couleur-texte;
+    font-size: p;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+
+    .logo__img {
+      width: 75px;
+    }
+
+    .logo__text {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .logo__title {
+      width: 10%;
+      margin-bottom: 2px;
+    }
+  }
+}
